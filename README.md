@@ -1,12 +1,10 @@
-# CVision Lab
+# CVision Lab V2
 
-浏览器端计算机视觉交互平台：摄像头实时检测、图片识别、检测框与置信度调节。使用 TensorFlow.js + COCO-SSD，本项目不需要 API Token。
+V2 多模式计算机视觉实验平台。
 
-## 部署到 GitHub Pages
-把 ZIP 解压后的所有文件上传到 `ricardoryw/ryw01` 仓库根目录，然后进入：
+当前稳定功能：COCO-SSD 实时目标检测、前后摄像头切换、置信度控制、移动端界面。
 
-`Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save`
+V2 已加入手势与人体姿态模式入口，下一阶段接入 MediaPipe 关键点模型。
 
-部署后访问：`https://ricardoryw.github.io/ryw01/`
-
-摄像头需要浏览器授予权限。GitHub Pages 的 HTTPS 环境适合使用摄像头 API。
+## 部署
+解压 ZIP，把 `index.html`、`styles.css`、`app.js`、`README.md`、`.nojekyll` 上传并覆盖 GitHub 仓库根目录。GitHub Pages 设置保持不变。
